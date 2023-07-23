@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CDZ Social</title>
+</head>
+<body>
+    
+    <div class="header mb-5">
+        <div class="container mt-5">
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-secondary btn-sm btn-dark rounded-pill" onclick="myFunction()">
+                    Modo dark
+                </button>
+            </div>
+        </div>
+        <div class="h1 mb-4 cavaleiros">Cavaleiros</div>
+        <div class="row">
+            <div class="col-md-4">
+                <input class="input form-control form-control-lg border-info rounded-lg" placeholder="procurar cavaleiro">
+            </div>
+            <div class="col-md-6 user-menu d-flex justify-content-end align-items-center">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            Reputação
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="btn btn-primary mt-2 rounded-sm" href="#" role="button">
+                            Novo Cavaleiro
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            Poder
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col md-4">
+                    <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="treinando no santuário com a marin">
+                        <div class="card-body">
+                            <div class="d-flex gap-3">
+                                <div class="user-img">
+                                    <img src="seiya.jpeg" height="150px" width="200px" class="img-fluid rounded-circle" alt="">
+                                </div>
+                                <div class="user-info">
+                                    <h4>Seiya de Pégaso</h4>
+                                    <h6>Localização: Atenas - Grécia</h6>
+                                    <span class="badge bg-warning">Lutas</span>
+                                    <span class="badge bg-warning">Treinos e Musculação</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col md-4">
+                    <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="treinando com meu mestre camus">
+                        <div class="card-body">
+                            <div class="d-flex gap-3">
+                                <div class="user-img">
+                                    <img src="hyoga.jpeg" height="150px" width="180px" class="img-fluid rounded-circle" alt="">
+                                </div>
+                                <div class="user-info">
+                                    <h4>Hyoga de Cisne</h4>
+                                    <h6>Localização: Sibéria</h6>
+                                    <span class="badge bg-warning">Treinos</span>
+                                    <span class="badge bg-warning">Meditação</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col md-4">
+                    <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="treinando com meu mestre na ilha da rainha da morte">
+                        <div class="card-body">
+                            <div class="d-flex gap-3">
+                                <div class="user-img">
+                                    <img src="ikki.jpg" height="150px" width="180px" class="img-fluid rounded-circle" alt="">
+                                </div>
+                                <div class="user-info">
+                                    <h4>Ikki de Fênix</h4>
+                                    <h6>Localização: Ilha da Rainha da Morte</h6>
+                                    <span class="badge bg-warning">Treinos</span>
+                                    <span class="badge bg-warning">Meditação</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        const popover = document.querySelectorAll("[data-bs-toggle='popover']");
+        const list = [...popover].map(popovertrigger => new bootstrap.Popover(popovertrigger));
+    </script>
+</body>
+</html>
+
+
